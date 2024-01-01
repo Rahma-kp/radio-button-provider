@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<homeprovider>(create: (_)=>homeprovider(),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: HomePage(),
       ),
     );

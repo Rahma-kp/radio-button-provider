@@ -16,24 +16,13 @@ class HomePage extends StatelessWidget {
               provider.selectedValue,
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
-            // Padding(
-            //   padding: const EdgeInsets.only(left: 50, right: 50),
-            //   child: TextFormField(
-            //     controller: provider.optionController,
-            //     decoration: InputDecoration(
-            //       border: OutlineInputBorder(
-            //         borderRadius: BorderRadius.circular(20),
-            //       ),
-            //     ),
-            //   ),
-            // ),
+        
             RadioListTile(
               title: Text('Others'),
               value: 'Others',
               groupValue: provider.selectedValue,
               onChanged: (selectedValue) {
                 provider.selectValue(selectedValue.toString());
-                provider.optionController.text = selectedValue.toString();
               },
             ),
             RadioListTile(
@@ -42,7 +31,6 @@ class HomePage extends StatelessWidget {
               groupValue: provider.selectedValue,
               onChanged: (selectedValue) {
                 provider.selectValue(selectedValue.toString());
-                provider.optionController.text = selectedValue.toString();
               },
             ),
             RadioListTile(
@@ -51,7 +39,6 @@ class HomePage extends StatelessWidget {
               groupValue: provider.selectedValue,
               onChanged: (selectedValue) {
                 provider.selectValue(selectedValue.toString());
-                provider.optionController.text = selectedValue.toString();
               },
             ),
           ],
